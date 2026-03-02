@@ -1,0 +1,239 @@
+Quero transformar a Hero Section da landing page em um mini criador de sites utilizando a lib Leva para permitir personalização visual em tempo real.
+
+Stack obrigatória:
+
+React
+
+TypeScript
+
+Tailwind
+
+Leva
+
+Instalar:
+
+npm install leva
+
+🎯 OBJETIVO
+
+Permitir que o usuário personalize:
+
+Cor primária
+
+Título (com partes destacadas na cor primária)
+
+Subtítulo (com partes destacadas na cor primária)
+
+Adicionar/remover botões
+
+Adicionar/remover badges abaixo dos botões
+
+Tudo com preview em tempo real.
+
+🧱 ARQUITETURA NECESSÁRIA
+
+Criar:
+
+HeroBuilder.tsx → componente principal
+
+HeroPreview.tsx → renderização visual
+
+useHeroConfig.ts → estado e controles do Leva
+
+Separar lógica de configuração da renderização.
+
+🎨 1️⃣ COR PRIMÁRIA DINÂMICA
+
+Usar Leva color picker:
+
+const { primaryColor } = useControls({
+  primaryColor: "#2563EB"
+});
+
+
+Aplicar via CSS variables:
+
+style={{ "--primary": primaryColor } as React.CSSProperties}
+
+
+E usar no Tailwind:
+
+text-[var(--primary)]
+bg-[var(--primary)]
+
+🧠 2️⃣ TÍTULO EDITÁVEL COM PARTES DESTACADAS
+
+Não usar string simples.
+
+Criar estrutura baseada em array:
+
+type TextPart = {
+  text: string;
+  highlight: boolean;
+};
+
+
+Exemplo:
+
+title: [
+  { text: "Seu negócio mais ", highlight: false },
+  { text: "organizado", highlight: true },
+  { text: ". Vendendo mais.", highlight: false }
+]
+
+
+Renderizar assim:
+
+<h1>
+  {title.map((part, i) => (
+    <span
+      key={i}
+      className={part.highlight ? "text-[var(--primary)]" : ""}
+    >
+      {part.text}
+    </span>
+  ))}
+</h1>
+
+
+No Leva:
+
+Permitir editar cada parte
+
+Permitir toggle highlight (boolean)
+
+🧠 3️⃣ SUBTITLE COM MESMA LÓGICA
+
+Mesma estrutura baseada em array:
+
+subtitle: TextPart[]
+
+
+Renderização idêntica ao título.
+
+🔘 4️⃣ BOTÕES DINÂMICOS (ADICIONAR / REMOVER)
+
+Criar estrutura:
+
+type HeroButton = {
+  id: string;
+  label: string;
+  variant: "primary" | "secondary";
+};
+
+
+Estado inicial:
+
+buttons: [
+  { id: "1", label: "CRIAR MEU LINK GRÁTIS", variant: "primary" },
+  { id: "2", label: "Ver como funciona", variant: "secondary" }
+]
+
+
+Renderização:
+
+{buttons.map(button => (
+  <button
+    key={button.id}
+    className={
+      button.variant === "primary"
+        ? "bg-[var(--primary)] text-white"
+        : "border border-gray-400"
+    }
+  >
+    {button.label}
+  </button>
+))}
+
+
+No painel Leva:
+
+Permitir editar texto do botão
+
+Permitir trocar tipo (primary / secondary)
+
+Botão para adicionar novo
+
+Botão para remover
+
+🏷 5️⃣ BADGES EDITÁVEIS E REMOVÍVEIS
+
+Criar estrutura:
+
+type Badge = {
+  id: string;
+  text: string;
+};
+
+
+Exemplo:
+
+badges: [
+  { id: "1", text: "Sem cartão de crédito" },
+  { id: "2", text: "Plano gratuito para sempre" }
+]
+
+
+Renderizar abaixo dos botões:
+
+<div className="flex gap-4 mt-4">
+  {badges.map(badge => (
+    <span
+      key={badge.id}
+      className="text-sm text-gray-600"
+    >
+      ✓ {badge.text}
+    </span>
+  ))}
+</div>
+
+
+No Leva:
+
+Editar texto
+
+Adicionar badge
+
+Remover badge
+
+✨ EXPERIÊNCIA VISUAL
+
+Manter layout igual à hero atual:
+
+Título grande
+
+Palavra destacada na cor primária
+
+Botões grandes
+
+Badges abaixo
+
+Visual limpo
+
+Responsivo
+
+🚀 IMPORTANTE
+
+Tudo deve atualizar em tempo real
+
+Código organizado
+
+Estado centralizado
+
+Fácil de salvar no banco futuramente
+
+Estrutura pronta para evoluir para plano PRO
+
+🧠 VISÃO DE PRODUTO
+
+Isso não é só personalização.
+
+Isso é a base para:
+
+White-label
+
+Templates diferentes
+
+Planos pagos
+
+Mini criador de sites simplificado

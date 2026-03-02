@@ -1,0 +1,314 @@
+Crie uma landing page moderna, altamente persuasiva, mobile-first e focada em conversão para um SaaS chamado:
+
+digita mei
+(Sugestão de slogan: “O próximo passo do seu negócio começa aqui.”)
+
+🎯 OBJETIVO PRINCIPAL
+
+Gerar cadastro gratuito para que pequenos empresários criem seu:
+
+✔ Link na bio profissional
+✔ Unificador de links
+✔ Comecem a usar o sistema
+
+A landing page deve fazer o visitante pensar:
+“Eu preciso disso agora.”
+
+🧱 STACK OBRIGATÓRIA
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Estrutura componentizada
+
+Código limpo e organizado
+
+Responsivo (mobile-first)
+
+SEO básico configurado
+
+Scroll suave
+
+Animações leves com Tailwind transitions
+
+🎨 DIREÇÃO VISUAL
+Paleta de cores
+
+Primária: Azul moderno (confiança)
+Exemplo: #2563EB (azul vibrante)
+
+Secundária: Azul escuro para contraste
+Exemplo: #1E3A8A
+
+Neutros:
+
+Branco
+
+Cinza claro #F3F4F6
+
+Cinza escuro #1F2937
+
+Estilo:
+
+Clean
+
+Espaçamento generoso
+
+Ícones grandes
+
+Layout simples
+
+Visual moderno
+
+Sem excesso de informação
+
+🏗 ESTRUTURA COMPLETA DA LANDING PAGE
+1️⃣ HERO SECTION (Seção mais importante)
+
+Layout:
+
+Texto à esquerda
+
+Imagem à direita (desktop)
+
+Empilhado no mobile
+
+Fundo com gradiente suave azul → branco
+
+Imagem:
+Foto realista de um dono de pequeno negócio sorrindo enquanto usa o celular.
+A tela do celular deve mostrar um “link na bio” organizado com botões como:
+
+Loja Online
+
+Agendar Horário
+
+Cardápio
+
+WhatsApp
+
+Conteúdo:
+Title (impactante e emocional)
+
+"Seu negócio mais organizado. Vendendo mais. Tudo em um único link."
+
+Subtitle
+
+"Crie seu link na bio profissional em 2 minutos e organize estoque, vendas, agendamentos e pagamentos sem complicação."
+
+CTA Primário (botão grande azul)
+
+"CRIAR MEU LINK GRÁTIS"
+
+CTA Secundário
+
+"VER COMO FUNCIONA"
+
+Subtexto pequeno:
+Sem cartão. Sem burocracia.
+
+2️⃣ SECTION – IDENTIFICAÇÃO COM A DOR
+
+Título:
+
+"Seu negócio está assim hoje?"
+
+Cards com ícones grandes:
+
+❌ Perde vendas no WhatsApp
+❌ Anota agendamentos no papel
+❌ Não sabe quanto tem no estoque
+❌ Tem vários links espalhados
+❌ Não sabe quais clientes voltam mais
+
+Final:
+
+"Você não precisa de vários sistemas. Precisa de um que cresça com você."
+
+CTA:
+"Começar grátis agora"
+
+3️⃣ SECTION – O QUE É O digita mei
+
+Título:
+
+"O digita mei é como um assistente digital para o seu negócio."
+
+Texto simples:
+
+"Você começa criando seu link na bio. Depois ativa estoque, loja online, pagamentos e agendamentos conforme precisar."
+
+Destaques visuais:
+
+✔ Começa gratuito
+✔ Funciona no celular
+✔ Feito para pequenos negócios
+
+4️⃣ SECTION – EXEMPLOS POR SEGMENTO
+
+Criar 3 cards modernos:
+
+💈 Barbearia
+
+Agenda online
+
+Confirmação automática
+
+Link na bio com botão “Agendar”
+
+🍔 Restaurante
+
+Cardápio digital
+
+Pedido online
+
+Pagamento por PIX
+
+🛍 Loja
+
+Controle de estoque
+
+Loja virtual simples
+
+Relatório de vendas
+
+Botão central:
+"Quero organizar meu negócio"
+
+5️⃣ SECTION – FUNCIONALIDADES
+
+Grid com ícones:
+
+Link na Bio Profissional
+
+Controle de Estoque
+
+Loja Virtual Drag & Drop
+
+Pagamentos (PIX, boleto, cartão)
+
+Sistema de Agendamento
+
+CRM simples
+
+Relatórios inteligentes
+
+Automação WhatsApp
+
+Cada item com descrição curta e simples.
+
+6️⃣ SECTION – COMO FUNCIONA
+
+Título:
+
+"Começar é simples."
+
+Passos com números grandes:
+
+1️⃣ Crie sua conta grátis
+2️⃣ Monte seu link na bio
+3️⃣ Ative os recursos conforme crescer
+
+Frase final:
+
+"Você começa simples. O digita mei cresce com você."
+
+CTA grande:
+"CRIAR CONTA GRATUITA"
+
+7️⃣ PROVA SOCIAL
+
+Adicionar card com avaliação:
+
+⭐⭐⭐⭐⭐
+
+"Em 1 semana já parei de perder pedidos e organizei meu estoque."
+— Carlos, dono de loja
+
+8️⃣ FAQ
+
+É realmente gratuito?
+
+Preciso de cartão?
+
+Funciona só no celular?
+
+Posso cancelar quando quiser?
+
+É difícil usar?
+
+Respostas simples, humanas e diretas.
+
+9️⃣ CTA FINAL (Impacto Emocional)
+
+Fundo azul escuro.
+
+Título grande:
+
+"Pare de perder vendas por falta de organização."
+
+Botão grande branco:
+
+"COMEÇAR AGORA GRÁTIS"
+
+Subtexto:
+Leva menos de 2 minutos.
+
+⚙️ EXIGÊNCIAS TÉCNICAS IMPORTANTES
+
+Código dividido em componentes:
+
+HeroSection
+
+FeaturesSection
+
+ProblemSection
+
+StepsSection
+
+CTASection
+
+FAQSection
+
+Usar Tailwind corretamente
+
+Garantir responsividade perfeita
+
+Hover animado nos botões
+
+Navbar fixa com botão “Criar conta”
+
+Footer simples
+
+Performance otimizada
+
+Estrutura pronta para evoluir para SaaS real
+
+🧠 TOM DE VOZ
+
+Brasileiro
+Simples
+Direto
+Educativo
+Sem termos técnicos
+
+Exemplo correto:
+"Seu estoque tá acabando."
+
+Exemplo errado:
+"Ruptura de inventário detectada."
+
+🧩 EXTRA (Diferencial)
+
+Adicionar:
+
+Contador animado de negócios cadastrados (ex: +1.248 negócios organizados)
+
+Micro animações suaves
+
+Sombra moderna nos cards
+
+Design emocional, não corporativo

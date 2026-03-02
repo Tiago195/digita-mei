@@ -1,0 +1,191 @@
+Refatore completamente a página pública do cliente renderizada na rota:
+
+/u/:slug
+
+Atualmente ela exibe apenas uma lista simples de botões (estilo linktree básico).
+Precisamos transformar essa página em uma mini landing page moderna e profissional, mantendo simplicidade, leveza e carregamento rápido.
+
+A referência visual deve seguir algo semelhante a uma Hero Section moderna (como a segunda imagem enviada anteriormente), porém adaptada para página pública de negócio.
+
+🎯 OBJETIVO DA PÁGINA
+
+Essa página deve:
+
+Passar profissionalismo imediato
+
+Gerar confiança
+
+Aumentar cliques nos botões principais (pedido, agendamento, WhatsApp etc.)
+
+Fazer parecer um “mini site profissional”
+
+Continuar extremamente simples e rápido
+
+Ela deve parecer:
+“Esse negócio é organizado e profissional.”
+
+🧱 STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Manter a estrutura atual do projeto
+
+Responsivo (mobile-first)
+
+Código componentizado
+
+🏗 NOVA ESTRUTURA DA PÁGINA
+
+A página deve ter apenas:
+
+1️⃣ Hero Section
+2️⃣ Section de Contato / Ações
+
+Nada além disso.
+
+1️⃣ HERO SECTION (principal foco)
+Layout
+
+Mobile:
+
+Centralizado
+
+Foto/logo circular grande
+
+Nome do negócio
+
+Subtítulo
+
+1 botão principal destacado
+
+2 botões secundários abaixo
+
+Desktop:
+
+Layout centralizado
+
+Caixa com sombra suave
+
+Visual limpo e moderno
+
+Conteúdo dinâmico (baseado no cliente)
+
+Foto do negócio ou avatar
+
+Nome do negócio
+
+Descrição curta (ex: “O melhor smash burger da cidade.”)
+
+Botão principal (ex: “Pedir agora”)
+
+Botões secundários (ex: “Ver cardápio”, “WhatsApp”)
+
+Estilo visual
+
+Fundo com gradiente suave (azul claro → branco)
+
+Card central com:
+
+Rounded-2xl
+
+Shadow-xl
+
+Padding generoso
+
+Botão principal:
+
+Fundo azul (#2563EB)
+
+Texto branco
+
+Hover com leve escala (scale-105)
+
+Botões secundários:
+
+Fundo branco
+
+Borda cinza clara
+
+Hover com leve sombra
+
+Exemplo visual esperado
+
+Topo:
+Logo circular grande com leve sombra
+
+Nome:
+Hamburgueria Top
+
+Subtítulo:
+O melhor smash burger da cidade.
+
+Botão primário grande:
+PEDIR AGORA
+
+Botões secundários:
+Cardápio Digital
+Falar no WhatsApp
+
+2️⃣ SECTION DE CONTATO / INFORMAÇÕES
+
+Logo abaixo da Hero, incluir:
+
+Ícones com:
+
+Endereço (se existir)
+
+Horário de funcionamento
+
+Telefone
+
+Botão adicional opcional:
+“Salvar contato”
+
+Estilo:
+
+Fundo branco
+
+Separação clara da Hero
+
+Ícones simples (Heroicons)
+
+✨ MELHORIAS IMPORTANTES
+
+Adicionar micro animações suaves (transition-all duration-300)
+
+Adicionar leve animação ao carregar (fade-in)
+
+Garantir excelente experiência mobile
+
+Espaçamento generoso
+
+Tipografia moderna (font-semibold para títulos)
+
+Botões grandes e fáceis de tocar
+
+🚫 O QUE NÃO FAZER
+
+Não deixar visual poluído
+
+Não adicionar múltiplas seções extras
+
+Não transformar em site completo
+
+Não adicionar navegação complexa
+
+A ideia é:
+Mini landing page simples, elegante e focada em conversão.
+
+🧠 EXPERIÊNCIA EMOCIONAL
+
+Essa página deve fazer o cliente do negócio pensar:
+
+“Esse lugar é organizado. Parece profissional.”
+
+E deve fazer o dono do negócio pensar:
+
+“Meu link parece um site de verdade.”

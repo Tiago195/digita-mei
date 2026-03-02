@@ -1,0 +1,224 @@
+Perfeito. Agora temos clareza estratégica.
+
+Você não está criando só um dashboard.
+Você está criando a base do ecossistema do Digita MEI.
+
+Vou estruturar isso em 4 partes:
+
+🧠 Estratégia de arquitetura
+
+🏗 Estrutura do Dashboard (estilo AWS simplificado)
+
+🎨 Experiência e posicionamento da marca
+
+🚀 Prompt pronto para Replit (React + Tailwind + TS)
+
+🧠 1️⃣ Estratégia: AWS para pequeno empreendedor
+
+A AWS é poderosa porque:
+
+Tudo é produto
+
+Tudo tem custo
+
+Tudo é modular
+
+Tudo pode crescer
+
+O Digita MEI será:
+
+Modular
+
+Escalável
+
+Preparado para múltiplos produtos
+
+Preparado para Pay-as-you-go (mesmo que ainda não use)
+
+Mas simplificado para quem:
+
+Usa celular
+Não é técnico
+Quer resultado rápido
+
+🏗 2️⃣ Estrutura do Dashboard (MVP v1)
+🔹 Layout Base
+
+Estrutura semelhante à AWS, porém simplificada:
+
+📱 Mobile-first (extremamente importante)
+Topbar
+- Logo
+- Nome do negócio
+- Menu
+
+Barra de busca global
+- Buscar produtos
+
+Seção 1: Visão Geral
+- Cliques no link da bio (métrica principal)
+- Plano atual
+
+Seção 2: Produtos
+- Card do produto ativo (Link na Bio)
+- Cards "Em breve" (Loja, Pagamentos, Agendamentos)
+
+Seção 3: Meu Negócio
+- Nome do negócio
+- Email cadastrado
+- Plano
+- Data de criação
+
+Seção 4: Crescimento
+- Espaço reservado para métricas futuras
+
+📦 Estrutura de Componentes (React + TS)
+DashboardLayout
+  ├── TopBar
+  ├── GlobalSearch
+  ├── OverviewSection
+  ├── ProductsSection
+  │     └── ProductCard
+  ├── BusinessInfoSection
+  └── GrowthSection
+
+📊 Modelo de dados inicial
+type Business = {
+  id: string
+  name: string
+  email: string
+  plan: "Free" | "Pro"
+  createdAt: string
+}
+
+type Product = {
+  id: string
+  name: string
+  status: "active" | "coming_soon"
+  monthlyPrice: number
+}
+
+type Metrics = {
+  linkClicks: number
+}
+
+🎨 3️⃣ Identidade Visual (confiança + simplicidade)
+
+Você falou antes sobre confiança e simplicidade.
+
+🎯 Cor principal recomendada:
+
+Azul profundo moderno:
+
+Primary: #1E40AF (blue-800 Tailwind)
+Accent: #3B82F6 (blue-500)
+Background: #F9FAFB (gray-50)
+
+
+Por quê?
+
+Azul transmite segurança
+
+Não é agressivo
+
+Funciona bem com fintechs
+
+Passa credibilidade para MEI
+
+💡 UX Estratégica
+
+O Digita MEI não pode parecer técnico.
+
+Então:
+
+❌ Não mostrar termos como:
+
+API
+
+Deploy
+
+Infraestrutura
+
+Logs
+
+✅ Mostrar:
+
+Seus cliques
+
+Seu plano
+
+Seus produtos
+
+Seu crescimento
+
+🚀 PROMPT COMPLETO PARA REPLIT
+
+Agora vem a parte que você pediu.
+
+Você pode copiar isso e colar direto no Replit AI:
+
+Crie um dashboard SaaS inspirado na AWS, mas simplificado para pequenos empreendedores brasileiros.
+
+Stack:
+- React
+- TypeScript
+- TailwindCSS
+- Mobile-first
+
+Objetivo:
+Criar o dashboard do Digita MEI, um SaaS que cresce junto com o negócio do cliente.
+
+Requisitos:
+
+1) Layout:
+- Mobile-first
+- Sidebar colapsável (em desktop)
+- Topbar com nome do negócio
+- Barra de busca global para buscar produtos
+
+2) Seção Visão Geral:
+- Card principal exibindo:
+   - Total de cliques no link da bio
+   - Plano atual
+- Design moderno com leve sombra e cantos arredondados
+
+3) Seção Produtos:
+- Card do produto ativo:
+   Nome: "Link na Bio"
+   Status: Ativo
+   Preço: Plano mensal
+   Botão: "Gerenciar"
+
+- Cards "Em breve":
+   - Loja Online
+   - Pagamentos
+   - Agendamentos
+
+Esses devem ter badge "Em breve"
+
+4) Seção Meu Negócio:
+- Nome do negócio
+- Email cadastrado
+- Plano
+- Data de criação
+
+5) Estilo:
+- Cor primária: blue-800
+- Interface limpa
+- Muito espaçamento
+- UX simples
+- Ícones minimalistas (usar lucide-react)
+
+6) Criar tipos TypeScript:
+Business
+Product
+Metrics
+
+7) Dados mockados para MVP.
+
+Objetivo final:
+Um dashboard modular, preparado para no futuro suportar:
+- Pay-as-you-go
+- Múltiplos produtos
+- Múltiplos usuários
+- Métricas avançadas
